@@ -1,7 +1,7 @@
 # crypto-epuskesmas
 this project build for my final report bachelor degrees in Budi Luhur University
 
-its tell about encrypted reporting electronical medical health on database with AES256 algorithm
+its tell about encrypted reporting electronical medical health on database with AES256 algorithm.
 Case at UPT. Puskesmas Larangan Utara
 
 Specification Software:
