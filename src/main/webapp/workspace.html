@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="je">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <!-- Title and other stuffs -->
+        <title>E-Puskesmas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+
+
+        <!-- Stylesheets -->
+        <link href="resources/style/bootstrap.css" rel="stylesheet">
+        <!-- Font awesome icon -->
+        <link rel="stylesheet" href="resources/style/font-awesome.css">
+        <!-- jQuery UI -->
+        <link rel="stylesheet" href="resources/style/jquery-ui.css">
+        <!-- Main stylesheet -->
+        <link href="resources/style/style.css" rel="stylesheet">
+        <!-- Widgets stylesheet -->
+        <link href="resources/style/widgets.css" rel="stylesheet">
+
+
+        <link href="resources/style/smfr-style.css" rel="stylesheet">
+        <link href="js/utils/date-picker/templates/datepicker.css" rel="stylesheet">
+        <link href="js/utils/busy/angular-busy.min.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 Support for IE -->
+        <!--[if lt IE 9]>
+        <script src="resources/js/html5shim.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="js/utils/text-angular/font-awesome.min.css">
+
+    </head>
+
+    <body>
+
+        <script type="text/javascript" src="js/ng/angular.js"></script>
+        <script type="text/javascript" src="js/ng/angular-route.js"></script>
+        <script type="text/javascript" src="js/ng/angular-resource.js"></script>
+        <script type="text/javascript" src="js/ng/angular-local-storage.min.js"></script>
+        <script type="text/javascript" src="js/utils/date-picker/datePicker.js"></script>
+        <script type="text/javascript" src="js/utils/date-picker/datePickerUtils.js"></script>
+        <script type="text/javascript" src="js/utils/date-picker/dateRange.js"></script>
+        <script type="text/javascript" src="js/utils/date-picker/input.js"></script>
+        <script type="text/javascript" src="js/utils/paging/paging.js"></script>
+        <script type="text/javascript" src="js/utils/dialog/dialogs.min.js"></script>
+        <script type="text/javascript" src="js/utils/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+        <script type="text/javascript" src="js/utils/file-upload/angular-file-upload.min.js"></script>
+        <script type="text/javascript" src="js/utils/dir-pagination/dirPagination.js"></script>
+        <script type="text/javascript" src="js/utils/busy/angular-busy.min.js"></script>
+
+        <script type="text/javascript" src="js/app/app.js"></script>
+
+        <script type="text/javascript" src="js/app/main/workspace.controller.js"></script>
+        <script type="text/javascript" src="js/app/main/workspace.service.js"></script>
+
+        <script type="text/javascript" src="js/app/masterdata/pasien.controller.js"></script>
+        <script type="text/javascript" src="js/app/masterdata/pasien.service.js"></script>
+        <script type="text/javascript" src="js/app/masterdata/dokter.controller.js"></script>
+        <script type="text/javascript" src="js/app/masterdata/dokter.service.js"></script>
+        <script type="text/javascript" src="js/app/masterdata/penyakit.controller.js"></script>
+        <script type="text/javascript" src="js/app/masterdata/penyakit.service.js"></script>
+        <script type="text/javascript" src="js/app/masterdata/obat.controller.js"></script>
+        <script type="text/javascript" src="js/app/masterdata/obat.service.js"></script>
+        <script type="text/javascript" src="js/app/transaction/rekammedis.controller.js"></script>
+        <script type="text/javascript" src="js/app/transaction/rekammedis.service.js"></script>
+        <script type="text/javascript" src="js/app/transaction/resepobat.controller.js"></script>
+        <script type="text/javascript" src="js/app/transaction/resepobat.service.js"></script>
+
+
+        <script src="js/utils/text-angular/angular.min.js" type="text/javascript"></script>
+        <script src="js/utils/text-angular/textAngular-rangy.min.js"></script>
+        <script src="js/utils/text-angular/textAngular-sanitize.min.js"></script>
+        <script src="js/utils/text-angular/textAngular.min.js"></script>
+        <script src="js/utils/text-angular/prettify.js" type="text/javascript"></script>
+        <script src="js/utils/text-angular/infolinks_main.js" type="text/javascript"></script>
+
+        <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+
+            <div class="containersmfr" ng-controller="WorkspaceController">
+                <!-- Menu button for smallar screens -->
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="workspace.html" class="navbar-brand icon-user-md"><span class="bold">  E-Puskesmas Larangan Utara </span></a>
+                </div>
+                <!-- Site name for smallar screens -->
+
+
+                <!-- Navigation starts -->
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <!-- Links -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <!-- 		Login : {{loginInfo.name}} --> <b class="caret"></b> 
+                            </a>
+
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu">
+                                <li><a href="j_spring_security_logout"><i class="icon-off"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Navigation ends -->
+            </div>
+
+        </div>
+
+
+        <!-- Main content starts -->
+
+        <div class="content" ng-controller="WorkspaceController">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-dropdown"><a href="#">Navigation</a></div>
+
+
+                <div class="sidebar-inner">
+
+                    <ul class="navi">
+
+                        <!-- Use the class nred, ngreen, nblue, nlightblue, nviolet or norange to add background color. You need to use this in <li> tag. -->
+
+
+                        <li class="current" style="border-top-width: 8px;border-top-style: solid;">
+                            <img src="resources/img/logo_tangerang.png" style="display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 50%; 
+                                padding: 12px 20px; 
+                                padding-top: 12px;
+                                padding-right: 20px;
+                                padding-bottom: 0px;
+                                padding-left: 20px;" alt="User Image">
+                        </li>
+                        <li>
+                            <a class="text-center">
+                                <strong>
+                                    Puskesmas <br>Larangan Utara
+                                </strong>
+                            </a>
+                        </li>
+
+                        <li class="current">
+                            <a href="#"><i class="icon-home"></i> Home </a>
+                        </li>
+
+                        <!-- Menu with sub menu -->
+                        <!-- Menu with sub menu -->
+
+
+                        <li class="has_submenu nlightblue">
+                            <a href="#">
+                                <!-- Menu name with icon -->
+                                <i class="icon-table"></i> Data Master
+                                <!-- Icon for dropdown -->
+                                <span class="pull-right"><i class="icon-angle-right"></i></span>
+                            </a>
+                            <ul>					
+                                <!--<li><a href="#masterdata/rumahsakit">Rumah Sakit</a></li>-->
+                                <li><a href="#masterdata/pasien">Pasien</a></li>
+                                <li><a href="#masterdata/dokter">Dokter</a></li>
+                                <li><a href="#masterdata/penyakit">Penyakit</a></li>
+                                <li><a href="#masterdata/obat">Obat</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="has_submenu nlightblue">
+                            <a href="#">
+                                <!-- Menu name with icon -->
+                                <i class="icon-table"></i> Data Transaksi
+                                <!-- Icon for dropdown -->
+                                <span class="pull-right"><i class="icon-angle-right"></i></span>
+                            </a>
+                            <ul>					
+                                <li><a href="#transaction/rekammedis">Rekam Medis</a></li>
+                                <li><a href="#transaction/resepobat">Resep Obat</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                    <!-- Date -->
+
+                    <div class="sidebar-widget">
+                        <div id="todaydate"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- Sidebar ends -->
+
+            <!-- Main bar -->
+
+            <ng-view>
+
+
+            </ng-view>
+
+            <!-- Mainbar ends -->
+
+            <div class="clearfix"></div>
+
+            <!-- BEGIN COPYRIGHT -->
+            <div class="bold-text">
+                2020 &copy; E-Puskesmas, by : Malvin Pahlevi
+            </div>
+            <!-- END COPYRIGHT -->
+
+        </div>
+        <!-- Content ends -->
+
+
+        <!-- Scroll to top -->
+        <span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+
+        <!-- JS -->
+        <script src="resources/js/jquery.js"></script>
+        <!-- jQuery -->
+        <script src="resources/js/bootstrap.js"></script>
+        <!-- Bootstrap -->
+        <script src="resources/js/jquery-ui-1.10.2.custom.min.js"></script>
+        <!-- jQuery UI -->
+
+        <script src="resources/js/custom.js"></script>
+
+        <!-- Script for this page -->
+        <script type="text/javascript">
+            $(function () {
+
+            });
+
+        </script>
+
+    </body>
+</html>

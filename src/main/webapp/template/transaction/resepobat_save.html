@@ -1,0 +1,84 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        
+        <!-- Page heading -->
+	<h2 class="pull-left">
+            Transaction
+        </h2>
+
+        <!-- Breadcrumb -->
+        <!--    <div class="bread-crumb pull-right">
+            <a href="workspace.html"><i class="icon-home"></i> Home</a>
+                Divider
+            <span class="divider">/</span> <a href="#" class="bread-current">{{title}}</a>
+        </div> -->
+
+	<div class="clearfix"></div>
+
+    </div>
+    <!-- Page heading ends -->
+
+    <!-- Matter -->
+    <div class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wlightblue">
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+		            </div>
+                            <div class="clearfix"></div>
+			</div>
+
+			<div class="widget-content">
+                            <div class="padd">
+                                
+                                <!-- Form starts.  -->
+				<form name="resepObatEditForm" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nomor Rekam Medis</label>
+                                        <div class="col-md-5">
+                                            <select ng-model="resepObat.rekamMedis.rekammedis_id" ng-options="item.rekammedis_id as item.rekammedis_id for item in rekammedisList" class="form-control" required>
+                                                <option value ="">--Pilih Nomor Rekam Medis--</option>
+                                            </select>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Kode Obat</label>
+                                        <div class="col-md-5">
+                                            <select ng-model="resepObat.obat.id_obat" ng-options="item.id_obat as item.obat_nama for item in obatList" class="form-control" required>
+                                                <option value ="">--Pilih Obat--</option>
+                                            </select>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Dosis Obat</label>
+                                        <div class="col-md-5">
+                                            <textarea  maxlength="255" rows="3" ng-model="resepObat.resepobat_jumlah" placeholder="Isi Dosis Obat" class="form-control" required ></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+			</div>
+                        
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button  type="button" ng-click="resepObatEditForm.$valid && save()" class="btn btn-success">
+                                    Simpan
+				</button>
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+			</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>

@@ -1,0 +1,98 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        <!-- Page heading -->
+	<h2 class="pull-left">
+            Transaction
+            <!-- page meta -->
+        </h2>
+
+	<!-- Breadcrumb -->
+	<!-- <div class="bread-crumb pull-right">
+	<a href="workspace.html"><i class="icon-home"></i> Home</a>
+            Divider
+            <span class="divider">/</span> <a href="#" class="bread-current">{{title}}</a>
+	</div> -->
+
+	<div class="clearfix"></div>
+    </div>
+    <!-- Page heading ends -->
+
+    <!-- Matter -->
+    <div class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wlightblue">
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+		            </div>
+                            <div class="clearfix"></div>
+			</div>
+
+			<div class="widget-content">
+                            <div class="padd">
+                                
+                                <!-- Form starts.  -->
+				<form name="krteriaDetailForm" class="form-horizontal" role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">ID Resep Obat</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{resepobatList.id_resepobat}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Nomor RM</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{resepobatList.rekamMedis.rekammedis_id}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Nama Pasien</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{resepobatList.rekamMedis.pasien.pasien_nama}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Tanggal Kunjungan</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{resepobatList.rekamMedis.rekammedis_tglkunjungan}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Nama Obat</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{resepobatList.obat.obat_nama}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Dosis Obat</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{resepobatList.resepobat_jumlah}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Dokter Pemeriksa</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{resepobatList.rekamMedis.dokter.dokter_nama}}">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+			</div>
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+			</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>

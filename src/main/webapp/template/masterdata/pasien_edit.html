@@ -1,0 +1,165 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        
+        <!-- Page heading -->
+	<h2 class="pull-left">
+            Data Master
+        </h2>
+
+        <!-- Breadcrumb -->
+        <!--    <div class="bread-crumb pull-right">
+            <a href="workspace.html"><i class="icon-home"></i> Home</a>
+                Divider
+            <span class="divider">/</span> <a href="#" class="bread-current">{{title}}</a>
+        </div> -->
+
+	<div class="clearfix"></div>
+
+    </div>
+    <!-- Page heading ends -->
+
+    <!-- Matter -->
+    <div class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wlightblue">
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+		            </div>
+                            <div class="clearfix"></div>
+			</div>
+
+			<div class="widget-content">
+                            <div class="padd">
+                                
+                                <!-- Form starts.  -->
+				<form name="pasienEditForm" class="form-horizontal" role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-2">KTP</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="45" type="text" ng-model="pasien.pasien_ktp" placeholder="Isi Nomor KTP" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nama</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="45" type="text" ng-model="pasien.pasien_nama" placeholder="Isi Nama Pasien" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Alamat</label>
+                                        <div class="col-md-5">
+                                            <textarea  maxlength="255" rows="5" ng-model="pasien.pasien_alamat" placeholder="Isi Alamat" class="form-control" required ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Tempat Lahir</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="255" type="text" ng-model="pasien.pasien_tempatlahir" placeholder="Isi Tempat Lahir Pasien" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Tanggal Lahir</label>
+                                        <div class="col-md-5">
+                                            <input type="date" ng-model="pasien.pasien_tgllahir" name="date" placeholder="Tanggal Lahir" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Telepon</label>
+                                        <div class="col-md-5">
+                                            <input type="text" maxlength="40" ng-model="pasien.pasien_telepon" placeholder="Isi Nomor Telepon/HP" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Jenis Kelamin</label>
+                                        <div class="col-md-5">
+                                            <select ng-model="pasien.pasien_jenkel" ng-options="item.id as item.name for item in jkPasien" class="form-control">
+                                                <option value="">--Pilih Salah Satu--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Agama</label>
+                                        <div class="col-md-5">
+                                            <select ng-model="pasien.pasien_agama" ng-options="item.id as item.name for item in agamaPasien" class="form-control">
+                                                <option value="">--Pilih Salah Satu--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nomor Asuransi</label>
+                                        <div class="col-md-5">
+                                            <input type="text" maxlength="45" ng-model="pasien.pasien_noasuransi" placeholder="Isi Nomor Asuransi" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Jenis Asuransi</label>
+                                        <div class="col-md-5">
+                                            <select ng-model="pasien.pasien_jenisasuransi" ng-options="item.id as item.name for item in jnAsuransi" class="form-control">
+                                                <option value="">--Pilih Salah Satu--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Golongan Darah</label>
+                                        <div class="col-md-5">
+                                            <select ng-model="pasien.pasien_goldar" ng-options="item.id as item.name for item in golDarah" class="form-control">
+                                                <option value="">--Pilih Salah Satu--</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Kelurahan</label>
+                                        <div class="col-md-5">
+                                            <input type="text" maxlength="45" ng-model="pasien.pasien_kelurahan" placeholder="Isi Kelurahan" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Kecamatan</label>
+                                        <div class="col-md-5">
+                                            <input type="text" maxlength="45" ng-model="pasien.pasien_kecamatan" placeholder="Isi Kecamatan" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Kota / Kabupaten</label>
+                                        <div class="col-md-5">
+                                            <input type="text" maxlength="45" ng-model="pasien.pasien_kotakabupaten" placeholder="Isi Kota/Kabupaten" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Provinsi</label>
+                                        <div class="col-md-5">
+                                            <input type="text" maxlength="45" ng-model="pasien.pasien_provinsi" placeholder="Isi Provinsi" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nomor KK</label>
+                                        <div class="col-md-5">
+                                            <input type="text" maxlength="45" ng-model="pasien.pasien_nokk" placeholder="Isi Nomor KK" class="form-control" required>
+					</div>
+                                    </div>      
+                                </form>
+                            </div>
+			</div>
+                        
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button  type="button" ng-click="pasienEditForm.$valid && save()" class="btn btn-success">
+                                    Simpan
+				</button>
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+			</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>

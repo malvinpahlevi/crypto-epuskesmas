@@ -1,0 +1,65 @@
+a {
+	cursor: pointer;
+}
+
+.approved {
+	background-color: #D1F0C7;
+}
+
+.spam {
+	text-decoration: line-through;
+	background-color: red;
+}
+
+.imagebox {
+	background-color: #fcf8e3;
+	border-color: #fbeed5;
+}
+
+/* .ng-pristine.ng-invalid {
+	border-color: rgb(127, 127, 241) !important;
+} */
+.ng-invalid.ng-dirty {
+	border-color: #FA787E !important;
+}
+
+.ng-invalid {
+	border-color: #FA787E !important;
+}
+
+.ng-valid.ng-dirty {
+	border-color: #2E43B6 !important;
+}
+
+.container{
+	/* padding-left: 10px;
+	padding-right: 10px; */
+}
+
+.widget{
+	margin-top: 0px;
+}
+
+.col-lg-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.modal { 
+	display: block;
+}
+
+/* Custom dialog/modal headers */
+
+.dialog-header-error { background-color: #d2322d; }
+.dialog-header-wait { background-color: #428bca; }
+.dialog-header-notify { background-color: #52b9e9; }
+.dialog-header-confirm { background-color: #52b9e9; }
+.dialog-header-error span, .dialog-header-error h4,
+.dialog-header-wait span, .dialog-header-wait h4,
+.dialog-header-notify span, .dialog-header-notify h4 { color: #ffffff; }
+.dialog-header-confirm span, .dialog-header-confirm h4 { color: #ffffff; }
+
+/* Ease Display */
+
+.pad { padding: 25px; }

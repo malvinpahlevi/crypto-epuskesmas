@@ -1,0 +1,91 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        
+        <!-- Page heading -->
+	<h2 class="pull-left">
+            Data Master
+        </h2>
+
+        <!-- Breadcrumb -->
+        <!--    <div class="bread-crumb pull-right">
+            <a href="workspace.html"><i class="icon-home"></i> Home</a>
+                Divider
+            <span class="divider">/</span> <a href="#" class="bread-current">{{title}}</a>
+        </div> -->
+
+	<div class="clearfix"></div>
+
+    </div>
+    <!-- Page heading ends -->
+
+    <!-- Matter -->
+    <div class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wlightblue">
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+		            </div>
+                            <div class="clearfix"></div>
+			</div>
+
+			<div class="widget-content">
+                            <div class="padd">
+                                
+                                <!-- Form starts.  -->
+				<form name="obatEditForm" class="form-horizontal" role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-2">Kode Obat</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="45" type="text" ng-model="obat.kd_obat" placeholder="Isi Kode Obat" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Nama Obat</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="45" type="text" ng-model="obat.obat_nama" placeholder="Isi Nama Obat" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Jenis Obat</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="45" type="text" ng-model="obat.obat_jenis" placeholder="Isi Jenis Obat" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Kadaluarsa</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="45" type="text" ng-model="obat.obat_kadaluarsa" placeholder="Isi Kadaluarsa Obat" class="form-control" required>
+					</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-2">Produsen</label>
+                                        <div class="col-md-5">
+                                            <input  maxlength="100" type="text" ng-model="obat.obat_produsen" placeholder="Isi Produsen Obat" class="form-control" required>
+					</div>
+                                    </div>  
+                                </form>
+                            </div>
+			</div>
+                        
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button  type="button" ng-click="obatEditForm.$valid && save()" class="btn btn-success">
+                                    Simpan
+				</button>
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+			</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>

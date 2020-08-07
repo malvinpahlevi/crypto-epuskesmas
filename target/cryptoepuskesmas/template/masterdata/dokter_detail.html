@@ -1,0 +1,86 @@
+<div class="mainbar">
+
+    <!-- Page heading -->
+    <div class="page-head">
+        <!-- Page heading -->
+        <h2 class="pull-left">
+            Data Master Dokter
+            <!-- page meta -->
+        </h2>
+
+        <!-- Breadcrumb -->
+        <!-- <div class="bread-crumb pull-right">
+        <a href="workspace.html"><i class="icon-home"></i> Home</a>
+            Divider
+            <span class="divider">/</span> <a href="#" class="bread-current">{{title}}</a>
+        </div> -->
+
+        <div class="clearfix"></div>
+    </div>
+    <!-- Page heading ends -->
+
+    <!-- Matter -->
+    <div class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wlightblue">
+                        <div class="widget-head">
+                            <div class="pull-left">{{title}}</div>
+                            <div class="widget-icons pull-right">
+                                <a ng-click="cancel()" class="wclose"><i class="icon-remove"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="widget-content">
+                            <div class="padd">
+
+                                <!-- Form starts.  -->
+                                <form name="krteriaDetailForm" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">ID Dokter</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{dokterList.id_dokter}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">NIP</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{dokterList.dokter_nip}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Nama</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{dokterList.dokter_nama}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Jenis Kelamin</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{dokterList.dokter_jenkel}}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="text-align: right" class="col-md-2 col-form-label">Spesialis</label>
+                                        <div class="col-md-5">
+                                            <input type="text" readonly class="form-control" value="{{dokterList.dokter_spesialis}}">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="widget-foot">
+                            <div class="text-right">
+                                <button type="button" ng-click="cancel()" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Matter ends -->
+
+</div>
