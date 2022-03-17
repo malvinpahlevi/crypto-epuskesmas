@@ -14,4 +14,5 @@ Specification Software:
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://id.linkedin.com/in/muhammad-yan-malvin-pahlevi-86b23b130)
+[![email](https://img.shields.io/badge/Email-Click-lightgrey)](malvinfrog@gmail.com)
 https://img.shields.io/badge/Email-Click-lightgrey malvinfrog@gmail.com
