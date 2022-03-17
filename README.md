@@ -10,6 +10,8 @@ Specification Software:
 3. Spring Security
 4. REST Architecture
 5. MVC pattern design with JDBC driver resource
-	
-Question malvinfrog@gmail.com
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://id.linkedin.com/in/muhammad-yan-malvin-pahlevi-86b23b130)
+https://img.shields.io/badge/Email-Click-lightgrey malvinfrog@gmail.com
