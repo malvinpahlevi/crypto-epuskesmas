@@ -1,4 +1,4 @@
-package com.api.nexmedia.util;
+package com.je.util;
 
 import java.util.Base64;
 import javax.crypto.Cipher;

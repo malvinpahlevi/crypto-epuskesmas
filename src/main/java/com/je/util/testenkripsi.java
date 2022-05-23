@@ -5,7 +5,7 @@
  */
 package com.je.util;
 
-import com.api.nexmedia.util.AES256;
+import com.je.util.AES256;
 
 /**
  *

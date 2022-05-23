@@ -1,6 +1,6 @@
 package com.je.master.controller;
 
-import com.api.nexmedia.util.AES256;
+import com.je.util.AES256;
 import com.je.master.model.Pasien;
 import java.util.HashMap;
 import java.util.Map;

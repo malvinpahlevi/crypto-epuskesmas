@@ -5,7 +5,7 @@
  */
 package com.je.master.controller;
 
-import com.api.nexmedia.util.AES256;
+import com.je.util.AES256;
 import com.je.master.model.Penyakit;
 import com.je.master.service.PenyakitService;
 import com.je.util.Constants;

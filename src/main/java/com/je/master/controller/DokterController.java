@@ -5,7 +5,7 @@
  */
 package com.je.master.controller;
 
-import com.api.nexmedia.util.AES256;
+import com.je.util.AES256;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.je.master.model.Dokter;
